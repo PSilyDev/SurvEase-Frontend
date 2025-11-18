@@ -1,10 +1,14 @@
+// src/api/client.ts
 import axios from "axios";
 
+// In dev -> local backend
+// In prod -> Render backend
 const BASE_URL =
-  import.meta.env.VITE_API_URL ??
-  (location.hostname === "localhost"
+  import.meta.env.DEV
     ? "http://localhost:4000"
-    : location.origin);
+    : "https://survease-backend.onrender.com";
+
+console.log("[API BASE_URL]", BASE_URL);
 
 export const api = axios.create({
   baseURL: BASE_URL,
