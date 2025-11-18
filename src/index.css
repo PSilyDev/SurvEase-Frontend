@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #e2e8f0;
+  --ink-soft: #94a3b8;
+  --accent-1: #00ffcc;
+  --accent-2: #5b7cff;
+  --accent-3: #9d5eff;
+  --surface: #0b0d10;
+  --surface-2: #141820;
+}
+
+/* global dark background */
+body {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+
+/* subtle card glow */
+.shadow-glow {
+  box-shadow: 0 0 24px rgba(91, 124, 255, 0.15),
+              0 0 48px rgba(0, 255, 204, 0.05);
+}
